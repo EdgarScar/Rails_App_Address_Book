@@ -1,0 +1,24 @@
+
+    <div>
+        <%= form_with model: @contact do |form| %>
+            <%= label(:first_name, "First Name") %>
+            <%= form.text_field :first_name %>
+            <br />
+            <br />
+            <%= label(:last_name, "Last Name") %>
+            <%= form.text_field :last_name %>
+            <br />
+            <br />
+            <%= label(:phone, "Phone") %>
+            <%= form.text_field :phone %>
+            <br />
+            <br />
+            <%= label(:email, "Email") %>
+            <%= form.text_field :email %>
+            <br />
+            <br />
+            <%= form.submit "Submit" %>
+            <br />
+            <br />
+            <%= link_to "Back", contacts_path %>
+        <% end %>
